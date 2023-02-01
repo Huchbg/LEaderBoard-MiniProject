@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>LeaderBoard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="head">LeaderBoard</h1>
+      <div class="inputs">
+        <input
+          type="text"
+          placeholder="FirstName"
+          class="input"
+          id="FirstNameInput"
+        />
+        <input
+          type="text"
+          placeholder="LastName"
+          class="input"
+          id="LastNameInput"
+        />
+        <input
+          type="text"
+          placeholder="Country"
+          class="input"
+          id="CountryInput"
+        />
+        <input
+          type="text"
+          placeholder="Player Score"
+          class="input"
+          id="ScoreInput"
+        />
+        <button class="addPlayerBtn">Add Player</button>
+      </div>
+    </div>
+    <p class="OnError"></p>
+
+    <div class="dynamicDiv"></div>
+
+    <template data-temlate-player>
+      <div class="playerDiv">
+        <div class="playerInfo partOfPlayer">
+          <p class="Name upperCase"></p>
+          <p class="dateP"></p>
+        </div>
+        <p class="countryP partOfPlayer upperCase">Finland</p>
+        <p class="scoreP partOfPlayer">85</p>
+        <div class="playerBTNS partOfPlayer">
+          <button class="delete btn"></button>
+          <button class="addScoreBTN btn">+5</button>
+          <button class="takeScoreBTN btn">-5</button>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

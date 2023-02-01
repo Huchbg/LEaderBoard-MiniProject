@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+.head{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    width: 100%;
+}
+.input {
+    font-size: 1rem;
+    padding: 10px 5px;
+    border: rgb(217, 160, 160) 1px solid ;
+    
+    width: 19%;
+}
+.OnError{
+    text-align: center;
+    color: red;
+}
+
+.input:focus{
+    outline-color: red;
+    
+}
+
+.addPlayerBtn{
+    width: 19%;
+    outline: none;
+    border: none;
+    background-color: rgb(217, 160, 160);
+    color: white;
+}
+.addPlayerBtn:hover{
+    background-color: rgba(217, 160, 160,0.6);
+}
+.dynamicDiv{
+    width: 70%;
+    margin: 0 auto;
+}
+.playerDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(223, 179, 179);
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.delete{
+    background-image: url('trashCan.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    outline: none;
+    
+    font-size: 1rem;
+}
+.delete:hover{
+    opacity: 0.5;
+}
+.btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+.addScoreBTN:hover{
+    background-color: rgb(135, 240, 135);
+}
+.takeScoreBTN:hover{
+    background-color: rgb(255, 84, 84);
+}
+.btn+.btn{
+    margin-left: 5px;
+}
+.partOfPlayer{
+    width: 25%;
+}
+.playerBTNS{
+    display: flex;
+}
+.dateP{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: gray;
+    word-spacing: 2px;
+}
+
+.upperCase{
+    text-transform: uppercase;
+}
